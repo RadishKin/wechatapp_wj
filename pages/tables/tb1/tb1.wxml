@@ -12,12 +12,16 @@
     </view>
 
     <view class="page__bd">
-        <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">错误提示</view>
-
-        <view class="weui-cells__title">单选列表项</view>
+    <!--顶部警告-->
+        <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">{{TopTipsText}}</view>
+        
+        <!--问卷本体-->
+        <view wx:for="{{forms}}">
+        <block >
+        <view class="weui-cells__title">{{item.qText}}</view>
         <view class="weui-cells weui-cells_after-title">
             <radio-group bindchange="radioChange">
-                <label class="weui-cell weui-check__label" wx:for="{{radioItems}}" wx:key="value">
+                <label class="weui-cell weui-check__label" wx:for="{{item.radio}}" wx:key="value">
                     <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
 
                     <view class="weui-cell__bd">{{item.name}}</view>
@@ -26,10 +30,15 @@
                     </view>
                 </label>
             </radio-group>
-            <view class="weui-cell weui-cell_link">
-                <view class="weui-cell__bd">添加更多</view>
-            </view>
+          
         </view>
+
+        </block>
+        
+        </view>
+
+
+
 
         <view class="weui-cells__title">复选列表项</view>
         <view class="weui-cells weui-cells_after-title">

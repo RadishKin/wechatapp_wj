@@ -1,7 +1,7 @@
 /* pages/tables/tb1/tb1.wxss */
 .top{
   background-color: #5bc4c7;
-  height: 80rpx;
+  height: 60rpx;
   text-align: center;
 
 }

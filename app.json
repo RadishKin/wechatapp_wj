@@ -6,7 +6,7 @@
   ],
   "window": {
     "backgroundColorTop": "#5bc4c7",
-    "backgroundTextStyle": "light",
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#5bc4c7",
     "navigationBarTitleText": "三千计划问卷系统",
     "navigationBarTextStyle": "white"

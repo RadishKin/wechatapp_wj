@@ -1,3 +1,4 @@
 {
-  "navigationBarTitleText": "问卷详情页"
+  "navigationBarTitleText": "问卷详情页",
+  "enablePullDownRefresh": true
 }

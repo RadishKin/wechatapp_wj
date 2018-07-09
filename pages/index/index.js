@@ -2,6 +2,7 @@
 //获取应用实例
 const app = getApp()
 
+
 Page({
   data: {
     motto: 'Hello World',
@@ -21,6 +22,8 @@ Page({
       url: '../tables/' + event.target.id + '/' + event.target.id,
     })
   },
+
+  
 
  
 })
