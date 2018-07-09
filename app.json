@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/tables/tb1/tb1"
+  ],
+  "window": {
+    "backgroundColorTop": "#5bc4c7",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#5bc4c7",
+    "navigationBarTitleText": "三千计划问卷系统",
+    "navigationBarTextStyle": "white"
+  }
+}

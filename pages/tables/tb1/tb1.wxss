@@ -1,0 +1,22 @@
+/* pages/tables/tb1/tb1.wxss */
+.top{
+  background-color: #5bc4c7;
+  height: 80rpx;
+  text-align: center;
+
+}
+
+.title{
+  color: white;
+  
+}
+
+.scroll-view{
+  height: 1000rpx;
+}
+
+
+.container{
+  height: 1300rpx;
+  
+}

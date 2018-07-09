@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container">
+
+<view class='text-fa'>
+ <text class='text1'>请选择你的要使用的问卷</text>
+</view>
+
+  <view class="selectlist">
+    <view wx:for="{{tables}}"> 
+     <button id='{{item.id}}' class="button" bindtap='bindViewTap'>
+     {{item.text}}
+     </button>
+    </view>
+  </view>
+
+  <view class='bottom'>
+
+  
+    <text>山东财经大学养老产业重点调研团队</text>
+  </view>
+</view>
