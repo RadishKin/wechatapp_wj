@@ -1,7 +1,8 @@
+
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
 <view class='top'>
     <text class='title'>{{title}}</text>
 </view> 
-<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
     <view class="page__hd">
         <view class="page__title">说明</view>
         <view class="page__desc">1.请认真填写如下表单，并在填写确认无误后点击上传。</view>
@@ -20,7 +21,7 @@
         <block wx:if="{{item.formType=='1'}}">
         <view class="weui-cells__title">{{item.qText}}</view>
         <view class="weui-cells weui-cells_after-title">
-            <radio-group id='{{item.qid}}' bindchange="radioChange">
+            <radio-group id='{{item.order}}' bindchange="radioChange">
                 <label class="weui-cell weui-check__label" wx:for="{{item.radioItems}}" wx:key="value"  >
                     <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
 
@@ -38,7 +39,7 @@
         <block wx:elif="{{item.formType=='2'}}">
            <view class="weui-cells__title">{{item.qText}}</view>
         <view class="weui-cells weui-cells_after-title">
-            <checkbox-group bindchange="checkboxChange">
+            <checkbox-group id='{{item.order}}' bindchange="checkboxChange">
                 <label class="weui-cell weui-check__label" wx:for="{{item.radioItems}}" wx:key="value">
                     <checkbox class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
 
@@ -49,9 +50,6 @@
                     <view class="weui-cell__bd">{{item.name}}</view>
                 </label>
             </checkbox-group>
-            <view class="weui-cell weui-cell_link">
-                <view class="weui-cell__bd">添加更多</view>
-            </view>
         </view>
         </block>
         
@@ -68,9 +66,7 @@
 
         </block>
 
-        <block wx:else="{{item.formType=='4'}}">
-        
-        </block>
+    
         </view>
 
 
@@ -90,7 +86,7 @@
         </checkbox-group>
 
         <view class="weui-btn-area">
-            <button class="weui-btn" type="primary" bindtap="showTopTips">确定</button>
+            <button class="weui-btn" type="primary" bindtap="uploadForm">确定</button>
         </view>
     </view>
 </view>

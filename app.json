@@ -2,7 +2,12 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/tables/tb1/tb1"
+    "pages/tables/tb1/tb1",
+
+    "pages/tables/tb1/msg_fail",
+    "pages/tables/tb1/msg_success"
+
+    
   ],
   "window": {
     "backgroundColorTop": "#5bc4c7",
